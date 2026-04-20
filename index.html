@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se-ne Souq • Tea, Herbs, Plants, Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+        
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .tea-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tea-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 30px -10px rgba(139, 90, 43, 0.15);
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: #8B5A2B;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .insta-logo {
+            border: 3px solid #f5f5f4;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        #scroll-to-disc{
+            margin-top: 100px;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Instagram Profile Picture as Logo -->
+                <img src="sene_tea.jpg" 
+                     alt="ስነstudio" 
+                     class="w-11 h-11 rounded-2xl object-cover insta-logo">
+                <div>
+                    <span class="logo-font text-2xl tracking-tighter font-semibold">Sene Souq</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="hover:text-amber-700 transition-colors">Home</a>
+                <a href="#teas" class="hover:text-amber-700 transition-colors">Sene Tea</a>
+                <a href="#about" class="hover:text-amber-700 transition-colors">Community</a>
+                <a href="#instagram" class="hover:text-amber-700 transition-colors">Instagram</a>
+            </div>
+            <a href="#" class="px-6 py-3 bg-amber-800 hover:bg-amber-900 text-white text-sm font-medium rounded-full transition flex items-center gap-2">
+                <i class="fas fa-shopping-bag"></i> Visit Shop
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <img src="sene_tea.jpg" 
+                 alt="ስነstudio" 
+                 class="w-28 h-28 mx-auto mb-6 rounded-3xl object-cover border-4 border-white/70 insta-logo">
+            <h1 class="logo-font text-7xl md:text-8xl font-bold tracking-tighter mb-4">Sene Souq</h1>
+            <p class="text-2xl md:text-3xl font-light mb-6">tea • herbs • plants • community</p>
+            <p class="max-w-md mx-auto text-lg opacity-90">Visit our shop in Addis Ababa. And taste Nature.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+                <a href="#teas" class="px-10 py-4 bg-white text-stone-900 font-medium rounded-full hover:bg-amber-100 transition">Explore Our Teas</a>
+                <a href="#instagram" class="px-10 py-4 border-2 border-white font-medium rounded-full hover:bg-white/10 transition">See the Community</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Signature Teas Section -->
+    <section id="teas" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="uppercase tracking-widest text-amber-700 text-sm font-medium">Sene Tea</span>
+                <h2 class="section-header text-5xl font-semibold mt-4">Our Favourite Blends</h2>
+                <p class="mt-4 text-stone-600 max-w-md mx-auto">East African botanicals and spices, roasted with care. Perfect for slow moments and community gatherings.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tea 1 -->
+                <div class="tea-card bg-white border border-stone-100 rounded-3xl overflow-hidden">
+                    <div class="h-72 bg-gradient-to-br from-emerald-100 to-stone-100 flex items-center justify-center text-7xl">🌿</div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-medium">Mint & Herbs Bliss</h3>
+                        <p class="text-stone-600 mt-2 mb-6">Fresh Ethiopian mint blended with calming local herbs. Ideal for clarity and calm evenings.</p>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <span class="block text-xs text-stone-500">250g</span>
+                                <span class="font-medium">180 ETB</span>
+                            </div>
+                            <button class="text-amber-700 hover:text-amber-800 text-sm font-medium flex items-center gap-1">
+                                Add to bag <i class="fas fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tea 2 -->
+                <div class="tea-card bg-white border border-stone-100 rounded-3xl overflow-hidden">
+                    <div class="h-72 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center text-7xl">🍵</div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-medium">Sene Herbal Harmony</h3>
+                        <p class="text-stone-600 mt-2 mb-6">Balanced blend of Ethiopian black tea and aromatic herbs. Our everyday favourite for sharing.</p>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <span class="block text-xs text-stone-500">100g</span>
+                                <span class="font-medium">120 ETB</span>
+                            </div>
+                            <button class="text-amber-700 hover:text-amber-800 text-sm font-medium flex items-center gap-1">
+                                Add to bag <i class="fas fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tea 3 -->
+                <div class="tea-card bg-white border border-stone-100 rounded-3xl overflow-hidden">
+                    <div class="h-72 bg-gradient-to-br from-lime-100 to-emerald-100 flex items-center justify-center text-7xl">🌱</div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-medium">Lemongrass & Ginger Glow</h3>
+                        <p class="text-stone-600 mt-2 mb-6">Bright lemongrass with warming ginger. Great for rainy days and community gatherings.</p>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <span class="block text-xs text-stone-500">200g</span>
+                                <span class="font-medium">150 ETB</span>
+                            </div>
+                            <button class="text-amber-700 hover:text-amber-800 text-sm font-medium flex items-center gap-1">
+                                Add to bag <i class="fas fa-arrow-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.instagram.com/se_ne.studio/" target="_blank" class="inline-flex items-center gap-2 text-amber-700 hover:text-amber-800 font-medium">
+                    See more blends on Instagram <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Community Section -->
+    <section id="about" class="py-24 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="uppercase text-amber-700 text-sm tracking-widest">Sene Studio</span>
+                    <h2 class="text-5xl font-semibold leading-tight mt-4">Tea that connects us</h2>
+                    <div class="mt-8 space-y-6 text-lg text-stone-600">
+                        <p>We are a small space in Addis Ababa dedicated to tea, herbs, plants, and real community.</p>
+                        <p>Come for a free tasting, join a full moon gathering, paint while sipping, or simply pause with a warm cup on a rainy day.</p>
+                        <p>Closed on Mondays. Open for slow, meaningful moments the rest of the week.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-10 shadow-sm">
+                    <h3 class="font-medium text-2xl mb-6">Community Gatherings</h3>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="text-2xl">🌕</span>
+                            <div>
+                                <p class="font-medium">Full Moon Breathwork & Dance</p>
+                                <p class="text-sm text-stone-500">Monthly gatherings with tea under the moon</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-2xl">🎨</span>
+                            <div>
+                                <p class="font-medium">Sip & Paint Evenings</p>
+                                <p class="text-sm text-stone-500">Creative sessions paired with herbal tea</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-2xl">☕</span>
+                            <div>
+                                <p class="font-medium">Free Tea Tastings</p>
+                                <p class="text-sm text-stone-500">Open to all — come share stories over tea</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-6 items-center justify-between mb-12">
+                <div class="flex items-center gap-4">
+                    <img src="sene_tea.jpg" 
+                         alt="@se_ne.studio" 
+                         class="w-16 h-16 rounded-2xl object-cover insta-logo">
+                    <div>
+                        <p class="uppercase text-xs tracking-widest text-amber-700">Live from the studio</p>
+                        <h2 class="text-4xl font-semibold">@se_ne.studio</h2>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/se_ne.studio/" target="_blank"
+                   class="inline-flex items-center gap-3 px-8 py-4 border border-stone-300 rounded-full hover:bg-stone-50 transition text-sm font-medium">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    Follow for daily moments
+                </a>
+            </div>
+            
+            <!-- Instagram Embed -->
+            <div class="bg-stone-50 border border-stone-100 rounded-3xl p-6 md:p-10">
+                <iframe src="https://www.instagram.com/se_ne.studio/embed" 
+                        width="100%" height="520" frameborder="0" scrolling="no" 
+                        allowtransparency="true" class="rounded-2xl bg-white"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <img src="sene_tea.jpg" 
+                         alt="Se_ne Souq" class="w-10 h-10 rounded-2xl object-cover">
+                    <span class="logo-font text-3xl tracking-tighter">Se_ne Souq</span>
+                </div>
+                <div class="text-stone-400 text-sm">
+                    Addis Ababa, Ethiopia<br>
+                    Closed on Mondays • Open for community & slow cups
+                </div>
+            </div>
+            <div class="text-stone-500 text-xs mt-16">
+                © 2026 Se_ne Souq • tea, herbs, plants, community
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        console.log('%cSe_ne Souq website — aligned with @se_ne.studio ☕', 'color:#8B5A2B; font-family:monospace');
+    </script>
+</body>
+</html>
